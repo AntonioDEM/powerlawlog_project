@@ -1,6 +1,6 @@
 # Power-law-log Project 
 Automation with matlab for data processing with the `power-law distribution` 
-
+&copy;matlab
 Automatic &Matlab application for fitting `log-normal` and 'power-law' distribution to empirical data, following the goodnes-of-fit based approach.
 ## Introduction
 
