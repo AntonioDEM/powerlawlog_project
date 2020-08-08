@@ -62,7 +62,7 @@ Goldstein, M. L.; Morris, S. A.; Yen G.G. Problems with Fitting to the Power-Law
 Fois, S.; Fadda, C.; Tonelli, R.; Sanna, M.; Urgeghe, P. P. Effects of the fermentation process on gas-cell size two-dimensional distribution and rheological characteristics of durum-wheat-based doughs. Food Res. Int., 2012, 49, 193–200, doi: 10.1016/j.foodres.2012.07.058.
 
 
-##Special Thanks
+## Special Thanks
 
 Special thanks to [Marco Campus](https://it.linkedin.com/in/marco-campus-7797959/it-it?trk=people-guest_people_search-card) for letting me participate in this work and to [Enrico de Marinis (Zefram)] (https://www.facebook.com/zefram.zef)for suggestions for improving the matlab code
 
