@@ -1,5 +1,5 @@
-# Power-law-log Project require "scientist"
-Automation with matlab for data processing with the powerlaw function
+# Power-law-log Project 
+Automation with matlab for data processing with the `power-law distribution` require "scientist"
 
 ## Introduction
 
