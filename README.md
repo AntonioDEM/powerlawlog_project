@@ -16,9 +16,9 @@ This tree represents the root folders that contain both the code and the externa
 
 Data must be formatted according to the `dataset.xls` file attached. 
 
-Data are used directly to compute the complementary cumulative distribution function `CCDF`. The `CDF` is defined as (`1−CDF), where the `CDF`(cumulative distribution function) is the integral of the probability distribution function (`PDF`).
+Data are used directly to compute the complementary cumulative distribution function **CCDF** (cumulative distribution function). The **CDF** is defined as (**1−CDF**), where the **CDF** is the integral of the probability distribution function **PDF**.
 
-In `dataset.xls`, the column `Areas` will be the one the program will extract and use during the procedure.
+In `dataset.xls`, the column **Areas** will be the one the program will extract and use during the procedure.
 
 The procedure is basically based on the execution of only two complex scripts:
 
