@@ -6,11 +6,10 @@ The following code and procedure have been developed to provide an easy and comp
 
 ##Tools script
 
-.
-├── example_data
-│   └── data.xls
-├── external
-│   ├── export_fig
+*├── example_data
+*│   └── data.xls
+*├── external
+*│   ├── export_fig
 │   │   ├── ImageSelection.class
 │   │   ├── ImageSelection.java
 │   │   ├── LICENSE
