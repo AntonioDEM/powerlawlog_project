@@ -34,12 +34,11 @@ The procedure is basically based on the execution of only two complex scripts:
 	2.2.	print the table of solution and save the same in .mat, .txt, .slx formats;
 
 	2.3. **run** the procedure for the simple or LaTex plot and save the images in .png format in the `imgPL` folder.
-	To get a good print of the images we used the `export_fig` tool by [Yair Altman]
-	(https://www.mathworks.com/matlabcentral/fileexchange/23629-export_fig)
+	To get a good print of the images we used the `export_fig` tool by [Yair Altman](https://www.mathworks.com/matlabcentral/fileexchange/23629-export_fig)
 
-		2.3.1.	 `plotsolLatex.m`: is based on the `table Latex` script from [Eli Duenisch](https://github.com/eliduenisch/latexTable/blob/master/README.md)
-
-		2.3.1	`plotsimple`: is a simple script which lists the main results related to the image (can be improved).
+	`plotsolLatex.m`: is based on the `table Latex` script from [Eli Duenisch](https://github.com/eliduenisch/latexTable/blob/master/README.md)
+	
+	`plotsimple`: is a simple script which lists the main results related to the image (can be improved).
 
 		![example img]()
 
