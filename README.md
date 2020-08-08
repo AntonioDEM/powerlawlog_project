@@ -64,7 +64,7 @@ Fois, S.; Fadda, C.; Tonelli, R.; Sanna, M.; Urgeghe, P. P. Effects of the ferme
 
 ## Special Thanks
 
-Special thanks to [Marco Campus](https://it.linkedin.com/in/marco-campus-7797959/it-it?trk=people-guest_people_search-card) for letting me participate in this work and to [Enrico de Marinis (Zefram)](https://www.facebook.com/zefram.zef)for suggestions for improving the matlab code
+Special thanks to [Marco Campus](https://it.linkedin.com/in/marco-campus-7797959/it-it?trk=people-guest_people_search-card) for letting me participate in this work and to [Enrico de Marinis (Zefram)](https://www.facebook.com/zefram.zef) for suggestions for improving the matlab code
 
 For the contributions on matlab and LaTex codes, would like to thank: the [matlab community](https://www.mathworks.com/matlabcentral/fileexchange/), [Stack Overflow](https://stackoverflow.com), StackExchange [{TEX}](https://tex.stackexchange.com).
 
