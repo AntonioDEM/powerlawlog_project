@@ -23,13 +23,13 @@ In `dataset.xls`, the column `Areas` will be the one the program will extract an
 
 	1.1.	Move your data file in .xls format into “data_xls” folder created, and you can either rename it or leave it the same name. This was done taking into account that the file could be anywhere on the computer or in an external hdd or in a pen, so that the original file remains intact and has no interaction with the procedure.
 
-	1.2	Execute `xlstomat.m` script, which is into “setting_file” folder.
+	1.2.	Execute `xlstomat.m` script, which is into “setting_file” folder.
 
-2.	*run* run `pwlawlog.m : perform the automatic procedure for the case study of power-law distribution on all excell sheet present in the .xls file;
+2.	**run** `pwlawlog.m : perform the automatic procedure for the case study of power-law distribution on all excell sheet present in the .xls file;
 
-	2.1		processes the data set by eliminating unnecessary columns and creating an array of useful data;
+	2.1.		processes the data set by eliminating unnecessary columns and creating an array of useful data;
 
-	2.2		compute the solutions of the log-normal (`pd {1, ii} = fitdist (g, 'Lognormal');), of the` power -law` (`[alpha, xmin, D] = plfit (g, 'finite' ); `)	
+	2.2.	compute the solutions of the log-normal (`pd {1, ii} = fitdist (g, 'Lognormal');`), of the `power -law` (`[alpha, xmin, D] = plfit (g, 'finite' );`)	
 
 	2.2.	print the table of solution and save the same in .mat, .txt, .slx formats;
 	2.2
