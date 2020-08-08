@@ -1,4 +1,4 @@
-# Power-law-log Project
+# Power-law-log Project require "scientist"
 Automation with matlab for data processing with the powerlaw function
 
 ## Introduction
