@@ -1,4 +1,4 @@
-# Power-law-log Project 
+# Power-law-log Project
 
 Automatic [&copy;Matlab](https://www.mathworks.com/?s_tid=gn_logo) application for fitting `log-normal` and 'power-law' distribution to empirical data, following the goodnes-of-fit based approach.
 ## Introduction
@@ -9,8 +9,6 @@ The following code and procedure have been developed to provide an easy and comp
 
 ![Tree files project](https://ibb.co/cwHx9MG)
 
-
-
 ##Procedure:
 
 Data must be formatted according to the `dataset.xls` file attached. 
@@ -18,6 +16,8 @@ Data must be formatted according to the `dataset.xls` file attached.
 Data are used directly to compute the complementary cumulative distribution function `CCDF`. The `CDF` is defined as (`1−CDF), where the `CDF`(cumulative distribution function) is the integral of the probability distribution function (`PDF`).
 
 In `dataset.xls`, the column `Areas` will be the one the program will extract and use during the procedure.
+
+The procedure is basically based on the execution of only two complex scripts:
 
 1.	**run** `settingpr.m`: you will get a message box with the instructions to follow and so with the other steps. The first step creates the folders and path.
 
@@ -32,12 +32,16 @@ In `dataset.xls`, the column `Areas` will be the one the program will extract an
 	2.2.	compute the solutions of the log-normal (`pd {1, ii} = fitdist (g, 'Lognormal');`), of the `power -law` (`[alpha, xmin, D] = plfit (g, 'finite' );`)	
 
 	2.2.	print the table of solution and save the same in .mat, .txt, .slx formats;
-	2.2
 
-The data are processed, at the end of the processing it is asked if you want to perform the simple plot procedure, with LaTex or to exit the procedure.
-The following script are integrated in the program. 
-    
+	2.3. **run** the procedure for the simple or LaTex plot and save the images in .png format in the `imgPL` folder.
+	To get a good print of the images we used the `export_fig` tool by [Yair Altman]
+	(https://www.mathworks.com/matlabcentral/fileexchange/23629-export_fig)
 
+		2.3.1.	 `plotsolLatex.m`: is based on the `table Latex` script from [Eli Duenisch](https://github.com/eliduenisch/latexTable/blob/master/README.md)
+
+		2.3.1	`plotsimple`: is a simple script which lists the main results related to the image (can be improved).
+
+		![example img]()
 
 
 ## Documentation
@@ -53,3 +57,12 @@ Clauset, A.; Shalizi, C.R.; Newman, M.E.J. Power-law distributions in empirical 
 Goldstein, M. L.; Morris, S. A.; Yen G.G. Problems with Fitting to the Power-Law Distribution. Phys. Condens. Matter, 2004, 41, 251-258, doi: 10.1140/epjb/e2004-00316-5.
 
 Fois, S.; Fadda, C.; Tonelli, R.; Sanna, M.; Urgeghe, P. P. Effects of the fermentation process on gas-cell size two-dimensional distribution and rheological characteristics of durum-wheat-based doughs. Food Res. Int., 2012, 49, 193–200, doi: 10.1016/j.foodres.2012.07.058.
+
+
+##Special Thanks
+
+Special thanks to [Marco Campus](https://it.linkedin.com/in/marco-campus-7797959/it-it?trk=people-guest_people_search-card) for letting me participate in this work and to [Enrico de Marinis (Zefram)] (https://www.facebook.com/zefram.zef)for suggestions for improving the matlab code
+
+For the contributions on matlab and LaTex codes, would like to thank: the [matlab community](https://www.mathworks.com/matlabcentral/fileexchange/), [Stack Overflow](https://stackoverflow.com), StackExchange [{TEX}](https://tex.stackexchange.com).
+
+
