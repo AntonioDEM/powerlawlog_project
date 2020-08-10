@@ -11,7 +11,7 @@ The following code and procedure have been developed to provide an easy and comp
 
 This tree represents the root folders that contain both the code and the external files that were used to aid in writing the code
 
-	![Tree files project](https://github.com/AntonioDEM/powerlawlog_project/blob/master/img/treeproject.png)
+![Tree files project](https://github.com/AntonioDEM/powerlawlog_project/blob/master/img/treeproject.png)
 
 ## Procedure:
 
