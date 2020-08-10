@@ -33,7 +33,7 @@ The procedure is basically based on the execution of only two complex scripts:
 
 	2.1.		**processes** the data set by eliminating unnecessary columns and creating an array of useful data;
 
-	2.2.	**compute* solutions of the **log-normal** 
+	2.2.	**compute** solutions of the **log-normal** 
 	
 	```
 	pd {1, ii} = fitdist (g, 'Lognormal');
