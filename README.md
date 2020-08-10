@@ -31,7 +31,7 @@ The procedure is basically based on the execution of only two complex scripts:
 
 2.	**RUN** file `pwlawlog.m`: perform the automatic procedure for the case study of power-law distribution on all excell data sheet present in the .xls file;
 
-	2.1.		**processes** the data set by import all the contents of the xls file folders, keep them in a **structure array**, then delete the unnecessary columns and keep the ** Area ** columns (located in the column for example E3: E135) and keep them in a new **cell array**;
+	2.1.		**processes** the data set by import all the contents of the xls file folders, keep them in a **structure array**, then delete the unnecessary columns and keep the **Area** columns (located in the column for example E3: E135) and keep them in a new **cell array**;
 
 	2.2.	**compute** solutions of the **log-normal** 
 	
