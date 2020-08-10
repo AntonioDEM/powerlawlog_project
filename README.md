@@ -23,17 +23,17 @@ In **dataset.xls**, the column **Areas** will be the one the program will extrac
 
 The procedure is basically based on the execution of only two complex scripts:
 
-1.	**RUN**`settingpr.m`: you will get a message box with the instructions to follow and so with the other steps. The first step creates the *folders* and *path*.
+1.	**RUN** file `settingpr.m`: you will get a message box with the instructions to follow and so with the other steps. The first step creates the *folders* and *path*.
 
-	1.1.	Move your data file in .xls format into **data_xls** folder created, and you can either rename it or leave it the same name. This was done taking into account that the file could be anywhere on the computer or in an external hdd or in a pen, so that the original file remains intact and has no interaction with the procedure.
+	1.1.	`copyfiletofolder.m`: Move your data file in .xls format into **data_xls** folder created, and you can either rename it or leave it the same name. This was done taking into account that the file could be anywhere on the computer or in an external hdd or in a pen, so that the original file remains intact and has no interaction with the procedure.
 
-	1.2.	Execute `xlstomat.m` script, which is into “setting_file” folder.
+	1.2.  `xlstomat.m` script, which is into “setting_file” folder.
 
-2.	**RUN**`pwlawlog.m` : perform the automatic procedure for the case study of power-law distribution on all excell sheet present in the .xls file;
+2.	**RUN** file `pwlawlog.m`: perform the automatic procedure for the case study of power-law distribution on all excell sheet present in the .xls file;
 
-	2.1.		processes the data set by eliminating unnecessary columns and creating an array of useful data;
+	2.1.		**processes** the data set by eliminating unnecessary columns and creating an array of useful data;
 
-	2.2.	compute the solutions of the **log-normal** 
+	2.2.	**compute* solutions of the **log-normal** 
 	
 	```
 	pd {1, ii} = fitdist (g, 'Lognormal');
@@ -46,12 +46,12 @@ The procedure is basically based on the execution of only two complex scripts:
 	```
 	The file scrips necessary for the basic processing of the program are contained in the **external** folder and refer to [Clauset et al](http://tuvalu.santafe.edu/~aaronc/powerlaws/)
 
-	2.2.	print the table of solution and save the same in .mat, .txt, .slx formats;
+	2.2.	**print** the table of solution and save the same in .mat, .txt, .slx formats;
 
-	2.3. **RUN** the procedure for the simple or LaTex plot and save the images in .png format in the **imgPL** folder.
+	2.3. **execute** the procedure for the simple or LaTex plot and save the images in .png format in the **imgPL** folder.
 	To get a good print of the images we used the `export_fig` tool by [Yair Altman](https://www.mathworks.com/matlabcentral/fileexchange/23629-export_fig)
 
-	`plotsolLatex.m`: is based on the `tlatexTable.m` script from [Eli Duenisch](https://github.com/eliduenisch/latexTable/blob/master/README.md)
+	`plotsolLatex.m`: is based on the `latexTable.m` script from [Eli Duenisch](https://github.com/eliduenisch/latexTable/blob/master/README.md)
 
 	`plotsimple.m`: is a simple script which lists the main results related to the image (can be improved).
 
