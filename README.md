@@ -23,7 +23,7 @@ In **dataset.xls**, the column **Areas** will be the one the program will extrac
 
 The procedure is basically based on the execution of only two complex scripts:
 
-1.	**RUN**`settingpr.m`: you will get a message box with the instructions to follow and so with the other steps. The first step creates the folders and path.
+1.	**RUN**`settingpr.m`: you will get a message box with the instructions to follow and so with the other steps. The first step creates the *folders* and *path*.
 
 	1.1.	Move your data file in .xls format into **data_xls** folder created, and you can either rename it or leave it the same name. This was done taking into account that the file could be anywhere on the computer or in an external hdd or in a pen, so that the original file remains intact and has no interaction with the procedure.
 
