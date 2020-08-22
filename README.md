@@ -5,7 +5,7 @@ Automatic [&copy;Matlab](https://www.mathworks.com/?s_tid=gn_logo) application f
 
 ## Introduction
 
-The following code and procedure have been developed to provide an easy and complete tool for automatization of fitting frequency data of objects according to both log normal and powerlaw distributions, starting from xls tabular data. The procedure uses external resources for the fitting code on the **power-law distribution**, of which we will give the references. The **lognormal distribution** is often not sufficient to interpret data distributions that have low frequencies and high intensities in the tail, although this events could be more relevant than those characterized by high frequencies. The populations of cities, the intensities of earthquakes, the sizes of power outages, for example, are all thought to follow power-law distributions. In food science, the bubble size in bread dough, or crackings in the surface of cookies, follow this pattern in the tail of the distribution. Quantities such as these are not well characterized by their typical or average values. Estimations on discrete parametric power law which better fits on the empirical data, is done as explained by [Clauset et al. (2009)](https://arxiv.org/abs/0706.1062). The `𝑥≥𝑚𝑖𝑛` value estimated is chosen in way that the estimated power law model gets a best fit of the empirical probability distribution for `𝑥 ≥ 𝑥𝑚𝑖𝑛` [Clauset et al. (2009)](https://arxiv.org/abs/0706.1062). To estimate the distance between the two model distributions, the empirical and theoretical **power-law** uses the [Kolmogorov – Smirnov](https://en.wikipedia.org/wiki/Kolmogorov–Smirnov_test) statistic `D`. Estimation for `𝑥 ≥ 𝑥𝑚𝑖𝑛` is defined by the value which minimizes `D`. the supposition that our data follows a power law for `𝑥 ≥ 𝑥𝑚𝑖𝑛`, the `α` parameter is estimated by a numeric optimization of the **log–likelihood**. 
+The following code and procedure have been developed to provide an easy and complete tool for automatization of fitting frequency data of objects according to both log normal and powerlaw distributions, starting from xls tabular data. The procedure uses external resources for the fitting code on the **power-law distribution**, of which we will give the references. The **lognormal distribution** is often not sufficient to interpret data distributions that have low frequencies and high intensities in the tail, although this events could be more relevant than those characterized by high frequencies. The populations of cities, the intensities of earthquakes, the sizes of power outages, for example, are all thought to follow power-law distributions. In food science, the bubble size in bread dough, or crackings in the surface of cookies, follow this pattern in the tail of the distribution. Quantities such as these are not well characterized by their typical or average values. Estimations on discrete parametric power law which better fits on the empirical data, is done as explained by [Clauset et al. (2009)](https://arxiv.org/abs/0706.1062). The `𝑥≥𝑚𝑖𝑛` value estimated is chosen in way that the estimated power law model gets a best fit of the empirical probability distribution for `𝑥 ≥ 𝑥𝑚𝑖𝑛` [Clauset et al. (2009)](https://arxiv.org/abs/0706.1062). To estimate the distance between the two model distributions, the empirical and theoretical **power-law** uses the [Kolmogorov – Smirnov](https://en.wikipedia.org/wiki/Kolmogorov–Smirnov_test) statistic `D`. Estimation for `𝑥 ≥ 𝑥𝑚𝑖𝑛` is defined by the value which minimizes `D`. the supposition that our data follows a power law for `𝑥 ≥ 𝑥𝑚𝑖𝑛`, the `α` parameter is estimated by a numeric optimization of the **log–likelihood**.
 
 ## Tools file pack
 
@@ -15,7 +15,7 @@ This tree represents the root folders that contain both the code and the externa
 
 ## Procedure:
 
-Data must be formatted according to the **dataset.xls** file attached. 
+Data must be formatted according to the **dataset.xls** file attached.
 
 Data are used directly to compute the complementary cumulative distribution function **CCDF** (cumulative distribution function). The **CDF** is defined as (**1−CDF**), where the **CDF** is the integral of the probability distribution function **PDF**.
 
@@ -33,16 +33,16 @@ The procedure is basically based on the execution of only two complex scripts:
 
 	2.1.		**processes** the data set by import all the contents of the xls file folders, keep them in a **structure array**, then delete the unnecessary columns and keep the **Area** columns (located in the column for example E3: E135) and keep them in a new **cell array**;
 
-	2.2.	**compute** solutions of the **log-normal** 
-	
+	2.2.	**compute** solutions of the **log-normal**
+
 	```
-	pd {1, ii} = fitdist (g, 'Lognormal');
+	pd{1, ii} = fitdist(g, 'Lognormal');
 	```
-	
-	and the **power -law** 
-	
+
+	and the **power -law**
+
 	```
-	[alpha, xmin, D] = plfit (g, 'finite' );
+	[alpha, xmin, D] = plfit(g, 'finite');
 	```
 	The file scrips necessary for the basic processing of the program are contained in the **external** folder and refer to [Clauset et al](http://tuvalu.santafe.edu/~aaronc/powerlaws/)
 
@@ -82,5 +82,3 @@ Fois, S.; Fadda, C.; Tonelli, R.; Sanna, M.; Urgeghe, P. P. Effects of the ferme
 Special thanks to [Marco Campus](https://it.linkedin.com/in/marco-campus-7797959/it-it?trk=people-guest_people_search-card) for letting me participate in this work and to [Enrico de Marinis (Zefram)](https://www.facebook.com/zefram.zef) for suggestions for improving the matlab code
 
 For the contributions on matlab and LaTex codes, would like to thank: the [matlab community](https://www.mathworks.com/matlabcentral/fileexchange/), [Stack Overflow](https://stackoverflow.com), StackExchange [{TEX}](https://tex.stackexchange.com), [GUIT](https://www.guitex.org/home/) - Gruppo Utilizzatori Italiani Tex
-
-
