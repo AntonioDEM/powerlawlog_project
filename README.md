@@ -1,6 +1,13 @@
 # Power-law-log Project
 [![View powerlawlog_project on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://it.mathworks.com/matlabcentral/fileexchange/78982-powerlawlog_project)
 
+
+<a href=https://www.mdpi.com/2304-8158/9/9/1272>
+    <img src=https://www.mdpi.com/img/design/mdpi-pub-logo-blue-small4.png?fff78193ca41c286 width="80" /> 
+    <img src= https://www.mdpi.com/img/journals/foods-logo.png?8b1ef14ac0638a0d)](https://www.mdpi.com/2304-8158/9/9/1272 width="200" />
+</a>
+
+
 Automatic [&copy;Matlab](https://www.mathworks.com/?s_tid=gn_logo) application for fitting [log-normal](https://en.wikipedia.org/wiki/Log-normal_distribution) and [power-law distribution](https://en.wikipedia.org/wiki/Power_law) to empirical data, following the goodnes-of-fit based approach.
 
 ## Introduction
