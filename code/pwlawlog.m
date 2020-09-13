@@ -61,12 +61,11 @@ databuf = StringData2{1,ii};
 databuf(any(isnan(databuf),2),:) = [];
 StringData2{1,ii} = databuf; % ricostruzione senza NaN
 end
-tEnd0 = toc(tStart);
-fprintf('%d minutes and %f seconds\n', floor(tEnd0/60), rem(tEnd0,60));
+
 
 clear('jj','ii', 'sn');
 save(fullfile('data_mat','dataset_2'),...
-        'S','StringData2','nelements','SheetNames','tEnd0'); %salva i dati NaN
+        'S','StringData2','nelements','SheetNames'); %salva i dati NaN
  
 %%%----Calcolo Parametri lognormale e Power Law
 clc; clear all;clearvars
