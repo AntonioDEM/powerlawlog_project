@@ -126,7 +126,6 @@ writetable(TabSol,soltxt);
 
 
 %%%--------Salva xls---------------------------------------------
-tStart = tic;
 
 vars = {'c_dir','nprova','fname','range','soltxt','Prove','vars'};
 vars{1} = cd; 
