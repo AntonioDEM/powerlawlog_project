@@ -33,7 +33,7 @@ CStruct.Interpreter = 'tex';
 CStruct.WindowStyle = 'modal';
 CStruct.FontSize = 12;
 nota1 = ['\fontsize{10} \rm Seleziona la cartella path'];
-nota2 = ['\fontsize{10} \rm Se vuoi copiare il file xls in data mat, digitare "1", altrimenti digire "2"'];
+nota2 = ['\fontsize{10} \rm Se vuoi copiare il file di dati in formato xls nella cartella data_xls, digitare "1", altrimenti digire "2"'];
 
 nota3 = ['\fontsize{10} \rm Avvia il file xlstomat per convertire il file xls'];
 
