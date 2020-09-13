@@ -127,13 +127,15 @@ writetable(TabSol,soltxt);
 
 %%%--------Salva xls---------------------------------------------
 
-vars = {'c_dir','nprova','fname','range','soltxt','Prove','vars'};
+vars = {'c_dir','nprova','fname','fname2','range','soltxt','Prove','vars'};
 vars{1} = cd; 
 cd Solution;
 vars{2} = 5; %% cambiare nel caso di file o prove diverse
 vars{3} = [ 'TabSol' '_N' num2str(vars{2}) '.xls'];
-vars{4} =['A1:M' num2str(nelements)];
-writetable(TabSol,vars{3},'Sheet',1,'Range',vars{4});
+vars{4} = [ 'TabSol' '_N' num2str(vars{2}) '.xlsx'];
+vars{5} =['A1:M' num2str(nelements)];
+writetable(TabSol,vars{3},'Sheet',1,'Range',vars{5});
+writetable(TabSol,vars{4},'Sheet',1,'Range',vars{5});
 clear vars;
 cd ../;
 
