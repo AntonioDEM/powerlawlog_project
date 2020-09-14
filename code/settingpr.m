@@ -40,9 +40,9 @@ nota3 = ['\fontsize{10} \rm Avvia il file xlstomat per convertire il file xls'];
 h=msgbox(nota1,'Selection','help',CStruct);
 uiwait(h)
 
-%-- seleziona la cartella che diventerà la path del prgetto
+%-- seleziona la cartella che diventerà la path del progetto
 folder = uigetdir();
-textLabel = sprintf('la path del progetto Ë: %s', folder);
+textLabel = sprintf('la path del progetto è: %s', folder);
 
 %--Crea le cartelle necessarie per il progetto
 newfold= {'data_xls','data_mat','imgPL','Solution'}; %% Folder Root Name
