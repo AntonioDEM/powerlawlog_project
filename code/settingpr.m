@@ -24,9 +24,6 @@
 
 
 clc; clear all; clearvars;
-tStart = tic;
-% nfold = 'C:\Users\Tony\Documents';
-% folder = uigetdir(nfold);
 
 sz = get( 0, 'Screensize');
 CStruct.Interpreter = 'tex';
@@ -35,17 +32,20 @@ CStruct.FontSize = 12;
 nota1 = ['\fontsize{10} \rm Seleziona la cartella path'];
 nota2 = ['\fontsize{10} \rm Copiare il file di dati in formato xls nella cartella "data xls", digitare "1" e invio, altrimenti se presente, digitare "2" e invio'];
 
-nota3 = ['\fontsize{10} \rm Avvia il file xlstomat per convertire il file xls'];
+nota3 = ['\fontsize{10} \rm Avvia il file xlstomat.m per convertire il file xls'];
 
 h=msgbox(nota1,'Selection','help',CStruct);
 uiwait(h)
 
 %-- seleziona la cartella che diventerà la path del progetto
+
 folder = uigetdir();
 textLabel = sprintf('la path del progetto è: %s', folder);
 
 %--Crea le cartelle necessarie per il progetto
+
 newfold= {'data_xls','data_mat','imgPL','Solution'}; %% Folder Root Name
+
 maxf = length(newfold);
 for n = 1:maxf
     mkdir([newfold{1,n}])
@@ -57,13 +57,13 @@ addpath(genpath(folder));
 disp([textLabel])
 savepath;
 
-%------scecgliere la cartella da cui prendere il file xls e copiarla
-%nella cartella data_mat
+%--Scegliere la cartella da cui prendere il file xls e quindi copiarlo
+%nella cartella data_xls lasciando lo stesso nome o rinominandolo.
 
 h=msgbox(nota2,'Selection','help',CStruct);
 uiwait(h)
 
-n = input('Vuoi copiare il file data.xls nella cartella data xls?  ')
+n = input('Se si desidera copiare il file data.xls nella cartella data xls è necessario lasciare lo stesso nome o rinominarlo')
 
 switch n
     case 1
