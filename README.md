@@ -16,9 +16,33 @@ The following code and procedure have been developed to provide an easy and comp
 
 ## Tools file pack
 
-This tree represents the root folders that contain both the code and the external files that were used to aid in writing the code
+This tree represents the root folders that contain both the code of the **powerlawlog_project** and the external files code's that were used to aid in writing the tools.
 
-![Tree files project](https://github.com/AntonioDEM/powerlawlog_project/blob/master/img/treeproject.png)
+```	
+── code
+│   ├── example_data
+│   │   └── data.xls
+│   ├── external
+│   │   ├── export_fig
+│   │   ├── latexTable.m
+│   │   └── powerlaws
+│   │       ├── plfit.m
+│   │       ├── plplot.m
+│   │       ├── plpva.m
+│   │       └── plvar.m
+│   ├── plotsol
+│   │   ├── plotsolLatex.m
+│   │   └── plotsolsimple.m
+│   ├── setting_file
+│   │   ├── copyfiletofolder.m
+│   │   └── xlstomat.m
+│   ├── pwlawlog.m
+│   └── settingpr.m
+		
+```
+ <!-- this is a cooment
+ ![Tree files project](https://github.com/AntonioDEM/powerlawlog_project/blob/master/img/treeproject.png)
+ -->
 
 ## Procedure:
 
