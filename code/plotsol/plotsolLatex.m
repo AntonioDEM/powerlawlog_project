@@ -6,7 +6,7 @@
 %                       \\   /                          %     
 %                        \\ /                           %     
 %                         \/                            %     
-%	©Antonio Demarcus - 2019/2020                       %	 
+%	ï¿½Antonio Demarcus - 2019/2020                       %	 
 %    email : antonio.demarcus@gmail.com             	%	 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -15,8 +15,9 @@ clc; clear all;
 %%%latexTable inserito nella cartella script.
 
 load('Solution.mat')
-nn = length(Solution);
-%nn=1;
+%nn = length(Solution);
+nn = size(Solution);
+nn = nn(1);
 latex = cell(1,nn); latex2=cell(1,nn); tabdata = cell(1,nn);
 folderName= {'imgPL'};
 Solution(:,6) = NaN; % le colonne devono essere sempre uguali, saranno 3 per la PWL e 3 per la LN
