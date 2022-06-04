@@ -10,7 +10,7 @@
 
 Automatic [&copy;Matlab](https://www.mathworks.com/?s_tid=gn_logo) application for fitting [log-normal](https://en.wikipedia.org/wiki/Log-normal_distribution) and [power-law distribution](https://en.wikipedia.org/wiki/Power_law) to empirical data, following the goodnes-of-fit based approach.
 
-`The code is in the public domain. If it is used for scientific elaborations, academic articles or other types of publications, please kindly ask for a quote from the source repository.
+*The code is in the public domain. If it is used for scientific elaborations, academic articles or other types of publications, please kindly ask for a quote from the source repository.*
 
 ## Introduction
 
